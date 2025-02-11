@@ -1,0 +1,184 @@
+/* color palette
+gray:           #6f7477
+lavender:       rgb(223, 210, 223)
+light gray:     #b9b7bd
+darker gray:    #444444
+dark gray:      #595e60
+slight tan:     #e7d2cc
+slightly gray:  #666b6e 
+dark indigo:    #170b3b
+dark purple:    rgb(55, 35, 55)
+*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+     box-sizing: border-box;
+  }
+  *, *:before, *:after {
+     box-sizing: inherit;
+  }
+
+
+  .content-wrapper {
+    margin:0 auto;
+    padding: 30px;
+
+    max-width: 900px;
+  }
+
+  .socials {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+html, body {
+    height: 100%
+}
+body{
+    margin: 0;
+}
+
+.socials li{
+    display:inline-block
+}
+
+
+
+.socials img {
+    width: 32px;
+
+}
+
+
+ /* HOME~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.home { background: url(../images/bookish.png) no-repeat ;
+    background-size: cover;
+
+}
+
+/* ~~~~~~~~~~~~~~~~Profiles~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.project-item{
+    display: flow-root;
+    margin: 60px 0;
+    border: double 5px  rgb(223, 210, 223);
+
+}
+.project-item img {
+    width: 300px;
+    float: left; 
+    margin-right: 20px;
+
+  }
+
+
+
+
+/* ~~~Content Wrapper~~~~~~~~~~~~~~~~~~~~~~ */
+
+.home .content-wrapper{
+    background: rgb(68 68 68 / .8);
+    
+}
+
+
+/* FOOTER ~~~~~~~~~~~~~~~~~~~~~~~ */
+
+footer { 
+    background: rgb(68 68 68 / .8);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+section p::first-letter{
+font-size: 20px;
+color: rgb(234, 225, 234);
+}
+
+section h4{
+    text-align: center;
+}
+section a{
+    align-content: center;
+}
+ 
+/* ~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* LINK STYLES ~~~~~~~~~~~~~~~~~~ */
+a { 
+    color:rgb(164, 170, 235);
+    text-decoration: none;
+}
+a:hover {
+color:#170b3b;
+
+text-decoration: none;
+}
+
+
+
+/* ~~~~~~~~~~~~~~ Resume ~~~~~~~~~~~~~~~~ */
+.resume header::before {
+    background: url(../images/bookish.png) center;
+    background-size: cover ;
+    content: "";
+    display:block;
+    height: 375px;
+}
+
+.resume-section {
+    margin-bottom: 50px;
+}
+
+.resume-section h2{
+    border-bottom: 2px double rgb(223, 210, 223);
+}
+
+.btn {
+background-color: rgb(55, 35, 55);
+
+}
+
+.download-link{
+    position:fixed;
+    top: 5px;
+    left: 5px;
+
+}
+
+
+body {
+    background:  #6f7477;
+}
+* {
+    color:rgb(223, 210, 223);
+}
+h1 { color: rgb(223, 210, 223);
+    text-align: center;
+
+}
+h2, h3 {
+    text-align: center;
+}
+
+#highlight {
+   background:#444444;  
+}
+
+.large-text {
+font-size: 20px
+}
+
+button {
+    
+    background: rgb(55, 35, 55);
+     
+}
+
+section p, h2 {
+    color: #e7d2cc;
+   
+}
