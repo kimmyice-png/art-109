@@ -18,7 +18,9 @@ html {
   *, *:before, *:after {
      box-sizing: inherit;
   }
-
+  .socials li{
+    display:inline-block
+}
 
   .content-wrapper {
     margin:0 auto;
@@ -39,9 +41,7 @@ body{
     margin: 0;
 }
 
-.socials li{
-    display:inline-block
-}
+
 
 
 
@@ -79,7 +79,7 @@ body{
 /* ~~~Content Wrapper~~~~~~~~~~~~~~~~~~~~~~ */
 
 .home .content-wrapper{
-    background: rgb(68 68 68 / .8);
+ background: rgba(43, 33, 43, 0.8);
     
 }
 
@@ -87,7 +87,7 @@ body{
 /* FOOTER ~~~~~~~~~~~~~~~~~~~~~~~ */
 
 footer { 
-    background: rgb(68 68 68 / .8);
+    background: rgba(55, 48, 55, 0.8);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -151,7 +151,7 @@ background-color: rgb(55, 35, 55);
 
 
 body {
-    background:  #6f7477;
+    background:  #35393b;
 }
 * {
     color:rgb(223, 210, 223);
