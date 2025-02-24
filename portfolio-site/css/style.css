@@ -14,6 +14,7 @@ dark purple:    rgb(55, 35, 55)
 */
 html {
      box-sizing: border-box;
+     font-size: 62.5%; ;
   }
   *, *:before, *:after {
      box-sizing: inherit;
@@ -38,26 +39,37 @@ h2, h1{
   font-style: normal;
   color: #e7d2cc;
     text-align: center;
+    font-size: 3rem;
+    margin: 0;
 }
 h1{
     color: lavender;
 }
 h3{
     font-family: "Chathura", serif;
-  font-weight: 800;
+  font-weight: 400;
   font-style: normal; 
-  font-size: 50px;
+  font-size: 40px;
+  font-size: 5rem;
+  margin: 0;
+  line-height: 1;
 }
 h4{
     font-family: "Chathura", serif;
-    font-weight: 800;
+    font-weight: 400;
     font-style: normal; 
     font-size: 35px;  
+    margin: 0;
+
+}
+.project-item a :hover{
+    opacity: 50%;
+    
 }
 
   .content-wrapper {
     margin:0 auto;
-    padding: 30px;
+    /* padding: 30px; */
 
     max-width: 900px;
   }
@@ -74,6 +86,8 @@ body{
     font-family: monospace;
   font-weight: 400;
   font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.4;
 }
 
 
@@ -100,25 +114,54 @@ body{
     padding: 30px;
 
 }
-/* ~~~~~~~~~~~~~~~~Profiles~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (max-width:900px){
+    .home .content-wrapper{
+        padding: 10px;
+    }
+    .content-bg{
+        padding:20px
+    }
+}
+
+/* ~~~~~~~~~~~~~~~~Projects~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .project-item{
     display: flow-root;
-    margin: 60px 0;
+    margin: 60px 20px;
     border: double 5px  rgb(223, 210, 223);
+    padding: 10px;
+    justify-content: center;
 }
 .work-summary{
     border: ridge ;
     margin: 10px;
     padding: 5px;
 }
-.project-item img, .project-item video {
+.project-item img{
     height: 175px;
     float: left; 
     margin-right: 20px;
-
+    margin: 5px;
   }
 
+@media screen and (min-width:490px) and (max-width:860px){
+    .project-wrap{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+
+}
+
+@media screen and  (max-width:400px){
+.project-item img{
+        /* width:100%; */
+        margin-bottom: 10px;
+    }
+
+
+}
 
 
 
@@ -134,17 +177,31 @@ body{
 
 footer { 
     background: rgba(55, 48, 55, 0.8);
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 20px; */
 }
 
+@media screen and (min-width:860px){
+    footer { 
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:859px){
+    footer{
+        text-align:center;
+        padding:10px;
+    }
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-section p::first-letter{
+/* section p ::{
 font-size: 20px;
 color: rgb(234, 225, 234);
-}
+} */
 
 section h4{
     text-align: center;
@@ -160,6 +217,7 @@ section a{
 a { 
     color:rgb(164, 170, 235);
     text-decoration: none;
+    padding: 5px;
 }
 a:hover {
 color:#170b3b;
@@ -183,19 +241,49 @@ text-decoration: none;
 }
 
 .resume-section h2{
-    border-bottom: 2px double rgb(223, 210, 223);
+    border-bottom: 2px dashed rgb(223, 210, 223);
 }
 
 .btn {
-background-color: rgb(55, 35, 55);
+background-color: rgb(23, 16, 23);
+text-transform: uppercase;
+font-size: 1.2rem;
+letter-spacing: .1em;
+border: outset rgb(55, 35, 55);
+border-radius: 7px;
+/* line-height: 1; */
 
+}
+
+.btn:hover{
+    opacity: 60%;
 }
 
 .download-link{
     position:fixed;
     top: 5px;
     left: 5px;
+    
+}
+@media screen and (max-width:450px){
+    .download-link{
+        position:absolute;
+        top: 5px;
+        left: 5px;
+    }
+}
 
+@media screen and (max-width:500px){
+    .resume header::before{
+        height: 200px;
+    }
+    h1{
+     font-size: 3rem;
+
+    }
+    h2{
+        font-size: 2.5rem;
+    }
 }
 
 /* ~~~~~~~~~~~~~work experience~~~~~~~ */
@@ -203,11 +291,30 @@ background-color: rgb(55, 35, 55);
 .work-item{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin: 30px 0px;
+
+}
+
+.work-item p {
+    margin: 0;
+}
+.work-summary p:first-child{
+    margin: 0;
+}
+
+
+/* ~~~~~~education~~~~~ */
+.education-item{
+    margin: 30px 0px;
+}
+.education-item p {
+    margin: 0;
 }
 
 
 body {
     background:  #35393b;
+    margin: 0;
 }
 * {
     color:rgb(223, 210, 223);
@@ -215,10 +322,12 @@ body {
 
 h2, h3 {
     text-align: center;
+
 }
 
 #highlight {
    background:#444444;  
+   
 }
 
 .large-text {
