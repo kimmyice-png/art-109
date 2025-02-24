@@ -19,7 +19,40 @@ html {
      box-sizing: inherit;
   }
   .socials li{
-    display:inline-block
+    display:inline-block;
+    margin-left: 10px;
+}
+.socials img:hover{
+   opacity: 0.5; 
+}
+
+/* h1{
+    font-family: "Foldit", serif;
+  font-optical-sizing: auto;
+  
+} */
+
+h2, h1{
+    font-family: "Share Tech Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #e7d2cc;
+    text-align: center;
+}
+h1{
+    color: lavender;
+}
+h3{
+    font-family: "Chathura", serif;
+  font-weight: 800;
+  font-style: normal; 
+  font-size: 50px;
+}
+h4{
+    font-family: "Chathura", serif;
+    font-weight: 800;
+    font-style: normal; 
+    font-size: 35px;  
 }
 
   .content-wrapper {
@@ -38,7 +71,9 @@ html, body {
     height: 100%
 }
 body{
-    margin: 0;
+    font-family: monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
@@ -55,19 +90,30 @@ body{
 
 .home { background: url(../images/bookish.png) no-repeat ;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
 
 }
+.content-bg{
+    background: rgba(22, 17, 22, 0.8);
+    padding: 30px;
 
+}
 /* ~~~~~~~~~~~~~~~~Profiles~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .project-item{
     display: flow-root;
     margin: 60px 0;
     border: double 5px  rgb(223, 210, 223);
-
 }
-.project-item img {
-    width: 300px;
+.work-summary{
+    border: ridge ;
+    margin: 10px;
+    padding: 5px;
+}
+.project-item img, .project-item video {
+    height: 175px;
     float: left; 
     margin-right: 20px;
 
@@ -79,8 +125,8 @@ body{
 /* ~~~Content Wrapper~~~~~~~~~~~~~~~~~~~~~~ */
 
 .home .content-wrapper{
- background: rgba(43, 33, 43, 0.8);
-    
+ 
+    flex: 1 0 auto;
 }
 
 
@@ -88,6 +134,9 @@ body{
 
 footer { 
     background: rgba(55, 48, 55, 0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -149,6 +198,13 @@ background-color: rgb(55, 35, 55);
 
 }
 
+/* ~~~~~~~~~~~~~work experience~~~~~~~ */
+
+.work-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
 
 body {
     background:  #35393b;
@@ -156,10 +212,7 @@ body {
 * {
     color:rgb(223, 210, 223);
 }
-h1 { color: rgb(223, 210, 223);
-    text-align: center;
 
-}
 h2, h3 {
     text-align: center;
 }
@@ -182,3 +235,4 @@ section p, h2 {
     color: #e7d2cc;
    
 }
+

@@ -3,12 +3,13 @@
       width: 100px;
       transform: rotate(0deg);
 
-      
     }
+
     100% {
       width: 500px;
       transform: rotate(360deg);
     }
+    
   }
   body div{
     margin-top: 50%;
@@ -20,8 +21,10 @@
     animation-duration: .5s;
     animation-iteration-count: 2;
     display: inline-block;
+    
+    
     background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     color: whitesmoke ;
   }
 
