@@ -1,0 +1,76 @@
+/* Tan Color:    rgb(237,231,220) */
+
+
+
+
+
+/* html {
+    box-sizing: border-box;
+    font-size: 62.5%; ;
+ }
+ *, *:before, *:after {
+    box-sizing: inherit;
+ } */
+
+.project-1{
+
+background: url(../images/castle.jpeg) no-repeat;
+background-size: cover;
+display: flex;
+background-color: rgb(237,231,220);
+flex-direction: column;
+
+}
+
+body p{
+
+    font-size: 50px;
+}
+.story-beg{
+    /* font-size: 50px; */
+background-color: rgb(237,231,220, .5);
+justify-content: center;
+padding: 10px;
+
+}
+.options li a{
+    font-size: 50px;
+    text-decoration: none;
+    color: black
+
+}
+.options li a:hover{
+    color: aqua;
+    font-weight: 600;
+}
+.options li{
+    list-style-type: none;
+    background-color: rgb(237,231,220, .5) ;
+    padding: 10px ;
+    text-align: center;
+
+}
+.car{
+    background: url(../images/car.jpeg) no-repeat;
+    background-size: cover;
+    display: flex;
+    background-color: rgb(237,231,220);
+    flex-direction: column;
+
+}
+.car p{
+    background-color: rgb(237,231,220, .5) ;
+    padding: 10px ;
+}
+.dragon{
+    background: url(../images/dragon.jpeg) no-repeat;
+    background-size: cover;
+    display: flex;
+    background-color: rgb(237,231,220);
+    flex-direction: column;
+}
+.dragon p{
+    background-color: rgb(237,231,220, .5) ;
+    padding: 10px ;
+
+}
