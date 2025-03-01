@@ -21,6 +21,9 @@ background-color: rgb(237,231,220);
 flex-direction: column;
 
 }
+button{
+    border: ridge;
+}
 
 body p{
 
@@ -33,10 +36,29 @@ justify-content: center;
 padding: 10px;
 
 }
+.bad-end{
+    background: url(../images/AdobeStock_193833792.jpeg) no-repeat;
+    background-color: rgba(0, 0, 0);
+    justify-content: center;
+    padding: 10px;
+    background-size: cover;
+    display: flex; 
+    flex-direction: column;
+
+}
+.bad-end p{
+    background-color: rgb(237,231,220, 0.5);
+    padding: 5px;
+
+}
 .options li a{
     font-size: 50px;
     text-decoration: none;
-    color: black
+    color: black;
+    background-color: rgb(237,231,220);
+    border: ridge 5px ;
+    border-radius: 7px;
+    padding: 5px;
 
 }
 .options li a:hover{
@@ -45,11 +67,12 @@ padding: 10px;
 }
 .options li{
     list-style-type: none;
-    background-color: rgb(237,231,220, .5) ;
+    /* background-color: rgb(237,231,220, .5) ; */
     padding: 10px ;
     text-align: center;
 
 }
+
 .car{
     background: url(../images/car.jpeg) no-repeat;
     background-size: cover;
