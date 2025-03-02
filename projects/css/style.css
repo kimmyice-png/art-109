@@ -14,9 +14,10 @@ html {
 
 .project-1{
 
-background:
+background-image: image-set(
  url(../images/castle.jpeg) 2x no-repeat
- url(../images/castle-500.jpeg) 1x no-repeat;
+ url(../images/castle-500.jpeg) 1x no-repeat
+ );
 background-size: cover;
 display: flex;
 background-color: rgb(237,231,220);
@@ -39,9 +40,9 @@ padding: 10px;
 
 }
 .bad-end{
-    background:
+    background-image: image-set(
      url(../images/AdobeStock_193833792.jpeg) 2x no-repeat,
-     url(../images/adobe-small-bad.jpeg) 1x no-repeat;
+     url(../images/adobe-small-bad.jpeg) 1x no-repeat);
     background-color: rgba(0, 0, 0);
     justify-content: center;
     padding: 10px;
@@ -57,9 +58,9 @@ padding: 10px;
 }
 
 .car-beach{
-    background: 
+    background-image: image-set( 
     url(../images/beach-scene.png) 2x no-repeat,
-    url(../images/beach-scene-small.png) 1x no-repeat;
+    url(../images/beach-scene-small.png) 1x no-repeat);
     background-color: rgba(0, 0, 0);
     justify-content: center;
     padding: 10px;
@@ -74,9 +75,9 @@ padding: 10px;
 
 }
 .beach-dragon{
-    background:
+    background-image: image-set(
      url(../images/beach-dragon.png) 2x no-repeat
-     url(../images/beach-dragon-small.png) 1x no-repeat;
+     url(../images/beach-dragon-small.png) 1x no-repeat);
     background-color: rgba(0, 0, 0);
     justify-content: center;
     padding: 10px;
@@ -89,9 +90,9 @@ padding: 10px;
     padding: 5px;
 }
 .forest-car{
-    background: 
+    background-image: image-set( 
     url(../images/forest-scene-car-dragon.png) 2x no-repeat,
-    url(../images/forest-scene-car-dragon-small.png) 1x no-repeat;
+    url(../images/forest-scene-car-dragon-small.png) 1x no-repeat);
     background-color: rgba(0, 0, 0);
     justify-content: center;
     padding: 10px;
@@ -104,9 +105,9 @@ padding: 10px;
     padding: 5px;
 }
 .forest-dragon{
-    background: 
+    background-image: image-set( 
     url(../images/forest-dragon.png) 2x no-repeat,
-    url(../images/forest-dragon-small.png) 1x no-repeat;
+    url(../images/forest-dragon-small.png) 1x no-repeat);
     background-color: rgba(0, 0, 0);
     justify-content: center;
     padding: 10px;
@@ -153,9 +154,9 @@ padding: 10px;
 }
 
 .car{
-    background: 
+    background-image: image-set( 
     url(../images/car.jpeg) 2x no-repeat,
-    url(../images/car-small.jpeg) 1x no-repeat
+    url(../images/car-small.jpeg) 1x no-repeat)
     ;
     background-size: cover;
     display: flex;
@@ -168,9 +169,9 @@ padding: 10px;
     padding: 10px ;
 }
 .dragon{
-    background:
+    background-image: image-set(
      url(../images/dragon.jpeg) 2x no-repeat,
-     url(../images/dragon-small.jpeg) 1x no-repeat;
+     url(../images/dragon-small.jpeg) 1x no-repeat);
     background-size: cover;
     display: flex;
     background-color: rgb(237,231,220);
