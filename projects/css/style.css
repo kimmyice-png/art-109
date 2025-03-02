@@ -13,7 +13,7 @@ html {
  }
 
 .project-1{
-
+background: url(../images/castle.jpeg);
 background-image: image-set(
 url(../images/castle-500.jpeg) 1x no-repeat,
  url(../images/castle.jpeg) 2x no-repeat
@@ -40,6 +40,7 @@ padding: 10px;
 
 }
 .bad-end{
+    background: url(../images/AdobeStock_193833792.jpeg);
     background-image: image-set(
     url(../images/adobe-small-bad.jpeg) 1x no-repeat,
      url(../images/AdobeStock_193833792.jpeg) 2x no-repeat
@@ -59,6 +60,7 @@ padding: 10px;
 }
 
 .car-beach{
+    background: url(../images/beach-scene.png);
     background-image: image-set( 
     url(../images/beach-scene-small.png) 1x no-repeat,
     url(../images/beach-scene.png) 2x no-repeat
@@ -78,6 +80,7 @@ padding: 10px;
 
 }
 .beach-dragon{
+    background: url(../images/beach-dragon.png);
     background-image: image-set(
     url(../images/beach-dragon-small.png) 1x no-repeat,
      url(../images/beach-dragon.png) 2x no-repeat
@@ -95,6 +98,7 @@ padding: 10px;
     padding: 5px;
 }
 .forest-car{
+    background: url(../images/forest-scene-car-dragon.png);
     background-image: image-set( 
     url(../images/forest-scene-car-dragon-small.png) 1x no-repeat,
     url(../images/forest-scene-car-dragon.png) 2x no-repeat
@@ -112,6 +116,7 @@ padding: 10px;
     padding: 5px;
 }
 .forest-dragon{
+    background: url(../images/forest-dragon.png);
     background-image: image-set( 
     url(../images/forest-dragon-small.png) 1x no-repeat,
     url(../images/forest-dragon.png) 2x no-repeat
@@ -163,6 +168,7 @@ padding: 10px;
 }
 
 .car{
+    background: url(../images/car.jpeg);
     background-image: image-set( 
     url(../images/car-small.jpeg) 1x no-repeat,
     url(../images/car.jpeg) 2x no-repeat)
@@ -179,6 +185,7 @@ padding: 10px;
     padding: 10px ;
 }
 .dragon{
+    background: url(../images/dragon.jpeg);
     background-image: image-set(
     url(../images/dragon-small.jpeg) 1x no-repeat,
     url(../images/dragon.jpeg) 2x no-repeat
