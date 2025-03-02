@@ -67,6 +67,46 @@ padding: 10px;
 
 
 }
+.beach-dragon{
+    background: url(../images/beach-dragon.png) no-repeat;
+    background-color: rgba(0, 0, 0);
+    justify-content: center;
+    padding: 10px;
+    background-size: cover;
+    display: flex; 
+    flex-direction: column;
+}
+.beach-dragon p{
+    background-color: rgb(237,231,220, 0.5);
+    padding: 5px;
+}
+.forest-car{
+    background: url(../images/forest-scene-car-dragon.png) no-repeat;
+    background-color: rgba(0, 0, 0);
+    justify-content: center;
+    padding: 10px;
+    background-size: cover;
+    display: flex; 
+    flex-direction: column;
+}
+.forest-car p{
+    background-color: rgb(237,231,220, 0.5);
+    padding: 5px;
+}
+.forest-dragon{
+    background: url(../images/forest-dragon.png) no-repeat;
+    background-color: rgba(0, 0, 0);
+    justify-content: center;
+    padding: 10px;
+    background-size: cover;
+    display: flex; 
+    flex-direction: column;
+
+}
+.forest-dragon p{
+    background-color: rgb(237,231,220, 0.5);
+    padding: 5px;
+}
 .options li a{
     font-size: 50px;
     text-decoration: none;
