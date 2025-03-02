@@ -51,6 +51,10 @@ padding: 10px;
     padding: 5px;
 
 }
+
+.car-beach{
+    background: url(https://kimmyice-png.github.io/art-109/projects/images/beach-scene.png);
+}
 .options li a{
     font-size: 50px;
     text-decoration: none;
