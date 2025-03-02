@@ -110,6 +110,7 @@ padding: 10px;
 .btn {
     background-color: rgb(23, 16, 23);
     color: aliceblue;
+    text-decoration: none;
     text-transform: uppercase;
     font-size: 1.2rem;
     letter-spacing: .1em;
