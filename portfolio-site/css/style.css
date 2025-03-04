@@ -145,6 +145,18 @@ body{
     margin: 5px;
   }
 
+.project-item img:hover{
+    color: #424242; 
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  opacity: 1;
+  transform: scale(3);
+  -ms-transform: scale(3); /* IE 9 */
+  -webkit-transform: scale(3); /* Safari and Chrome */
+  }
 @media screen and (min-width:490px) and (max-width:860px){
     .project-wrap{
         display:grid;
