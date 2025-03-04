@@ -140,13 +140,14 @@ body{
 }
 .project-item img{
     height: 175px;
-    float: left; 
-    margin-right: 20px;
-    margin: 5px;
-  }
+    flex-wrap: wrap;
+    
+}
 
 .project-item img:hover{
     color: #424242; 
+    margin: 0 50%;
+
   -webkit-transition: all .5s ease-in;
   -moz-transition: all .5s ease-in;
   -ms-transition: all .5s ease-in;
@@ -156,7 +157,7 @@ body{
   transform: scale(3);
   -ms-transform: scale(3); /* IE 9 */
   -webkit-transform: scale(3); /* Safari and Chrome */
-  }
+}
 @media screen and (min-width:490px) and (max-width:860px){
     .project-wrap{
         display:grid;
