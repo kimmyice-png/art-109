@@ -325,6 +325,16 @@ border-radius: 7px;
     padding: 10px;
 }
 
+/* ~~~~~~~Biography~~~~~~~~~~~~ */
+.bio{
+    height: 300px;
+    flex-wrap: wrap;
+    display: flow-root;
+    float: left;
+    padding: 10px;
+    
+}
+
 
 body {
     background:  #35393b;
