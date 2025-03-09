@@ -141,10 +141,14 @@ body{
 .project-item img{
     height: 175px;
     /* flex-wrap: wrap; */
+    border-radius: 5%;
     
 }
 .project-item img:hover{
     opacity: 50%;
+    border: 2.5px;
+    border-style: outset;
+
 }
 /* .project-item img:active{
     color: #424242; 
