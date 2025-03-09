@@ -146,7 +146,7 @@ body{
 .project-item img:hover{
     opacity: 50%;
 }
-.project-item img:active{
+/* .project-item img:active{
     color: #424242; 
     margin: 0 50%;
 
@@ -157,8 +157,8 @@ body{
   transition: all 1s ease-in;
   opacity: 1;
   transform: scale(3);
-  -ms-transform: scale(3); /* IE 9 */
-  -webkit-transform: scale(3); /* Safari and Chrome */
+  -ms-transform: scale(3);
+  -webkit-transform: scale(3);
 }
 @media screen and (min-width:490px) and (max-width:860px){
     .project-wrap{
@@ -171,12 +171,12 @@ body{
 
 @media screen and  (max-width:400px){
 .project-item img{
-        /* width:100%; */
+        width:100%;
         margin-bottom: 10px;
     }
 
 
-}
+} */
 
 .media{
     text-align: center;
