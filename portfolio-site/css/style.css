@@ -140,23 +140,25 @@ body{
 }
 .project-item img{
     height: 175px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     
 }
-
 .project-item img:hover{
+    opacity: 50%;
+}
+.project-item img:active{
     color: #424242; 
     margin: 0 50%;
 
-  -webkit-transition: all .5s ease-in;
-  -moz-transition: all .5s ease-in;
-  -ms-transition: all .5s ease-in;
-  -o-transition: all .5s ease-in;
-  transition: all .5s ease-in;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in;
   opacity: 1;
   transform: scale(3);
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -ms-transform: scale(3); /* IE 9 */
+  -webkit-transform: scale(3); /* Safari and Chrome */
 }
 @media screen and (min-width:490px) and (max-width:860px){
     .project-wrap{
