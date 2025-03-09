@@ -155,8 +155,8 @@ body{
   transition: all .5s ease-in;
   opacity: 1;
   transform: scale(3);
-  -ms-transform: scale(3); /* IE 9 */
-  -webkit-transform: scale(3); /* Safari and Chrome */
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
 }
 @media screen and (min-width:490px) and (max-width:860px){
     .project-wrap{
