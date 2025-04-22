@@ -1,0 +1,26 @@
+{
+    "name": "kim_code", 
+    "version": "1.0.0", 
+    "description": "This is an example for how to use main",
+    "dependencies": {
+      "dependencieName": "express" 
+    }, 
+    "devDependencies": {"express": "4.13.4"}, 
+        "scripts": {
+      "test": "echo"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/kimmyice-png/art-109" 
+    },
+    "keywords": [
+        "sockets",
+        "p5.js",
+        "node"
+    ],
+    "author": "kimberly", 
+    "license": "ISC", 
+    "bugs": {
+      "url": "https://github.com/kimmyice-png/art-109/issues"
+    }
+  }

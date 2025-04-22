@@ -1,81 +1,89 @@
 import * as THREE from 'three';
-
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-// import {OrbitControls} from htt
+import { OrbitControls } from '../loaders/OrbitControls.js';
 
+let sceneContainer = document.querySelector("#scene-container");
 
-
-
-
-
+let human, mixer;
 
 const scene = new THREE.Scene();
 
-const light = new THREE.DirectionalLight(0xfffffff, 7);
+const light = new THREE.DirectionalLight(0xffffff, 7);
 light.position.set(1, 1, 5);
 scene.add(light);
 
-
-const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+const camera = new THREE.PerspectiveCamera(
+  75,
+  sceneContainer.clientWidth / sceneContainer.clientHeight,
+  0.1,
+  1000
+);
 
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize( window.outerWidth, window.outerHeight );
-renderer.setAnimationLoop( animate );
-document.body.appendChild( renderer.domElement );
+renderer.setSize(sceneContainer.clientWidth, sceneContainer.clientHeight);
+renderer.setAnimationLoop(animate);
+sceneContainer.appendChild(renderer.domElement);
 
 const loader = new GLTFLoader();
-// const controls = new OrbitControls(camera, renderer.domElement);
+const controls = new OrbitControls(camera, renderer.domElement);
+
+// Load 3D object
+loader.load('./threeD-objects/bob_animation.glb', function (gltf) {
+    human = gltf.scene;
+    scene.add(human);
+
+    mixer = new THREE.AnimationMixer(human);
+    const clips = gltf.animations;
+    // const clip = THREE.AnimationClip.findByName(clips, 'human');
+    // const action = mixer.clipAction(clip);
+    // action.play();
+    clips.forEach(function(clip){
+
+      const action = mixer.clipAction(clip);
+      action.play();
+    });
 
 
 
 
-//3d object
+    undefined, function(error){
+      console.error(error)
+    }
+    
+   
+  }
+);
 
 
+document.querySelector("body").addEventListener("mousedown", () => {
 
-loader.load( './threeD-objects/bob_the_disappoinment.glb', function ( gltf ) {
-    const human = gltf.scene;
-  scene.add( human );
-
-
+  console.log("mousedown")
+})
 
 
-
-
-
-}, undefined, function ( error ) {
-
-  console.error( error );
-
-} );
-
-// const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-// const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-// const cube = new THREE.Mesh( geometry, material );
-// scene.add( cube );
-
-camera.position.z = -0.5;
-camera.position.x = -10.5;
+camera.position.set(-10.5, 0.5, -0.5);
 camera.rotation.y = 11;
-camera.position.y = 0.5;
 
+const clock = new THREE.Clock();
 
 function animate() {
+  const delta = clock.getDelta();
 
-//   cube.rotation.x += 0.01;
-//   cube.rotation.y += 0.01;
-  // human.rotation.x += 0.01
+  if (human) {
+    mixer.update(delta);
+  }
 
+  controls.update();
+  renderer.render(scene, camera);
+}
 
-// scene.rotation.y +=0.01;
+// Optional: Make it responsive
+window.addEventListener('resize', onWindowResize);
 
+renderer.setAnimationLoop(animate);
 
-
-// scene.rotation.z +=0.01;
-
-// scene.rotation.x +=0.01;
-
-
-  renderer.render( scene, camera );
-
+function onWindowResize() {
+  camera.aspect = sceneContainer.clientWidth / sceneContainer.clientHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(sceneContainer.clientWidth, sceneContainer.clientHeight);
 }
