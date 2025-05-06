@@ -8,8 +8,8 @@ let human, mixer;
 
 const scene = new THREE.Scene();
 
-const light = new THREE.DirectionalLight(0xffffff, 7);
-light.position.set(1, 2, 5);
+const light = new THREE.DirectionalLight(0xfff3c6, 7);
+light.position.set(-30, 10, 0);
 scene.add(light);
 
 const camera = new THREE.PerspectiveCamera(
@@ -54,6 +54,9 @@ loader.load('./threeD-objects/river.glb', function (gltf) {
    
   }
 );
+const ploader = new THREE.TextureLoader();
+scene.background = ploader.load('./threeD-objects/mountains.jpg')
+
 
 
 document.querySelector("body").addEventListener("mousedown", () => {
@@ -66,6 +69,7 @@ camera.position.set(-30.5, 5.5, -20.5);
 camera.rotation.y = 70;
 
 const clock = new THREE.Clock();
+
 
 function animate() {
   const delta = clock.getDelta();
