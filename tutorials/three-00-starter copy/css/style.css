@@ -17,6 +17,7 @@ body{
     padding: 0;
     color: rgb(35, 38, 41);
     text-align: center;
+    z-index: -10;
     
    
 }
