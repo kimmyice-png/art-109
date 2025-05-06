@@ -103,7 +103,7 @@ scene.background = ploader.load('./threeD-objects/mountains.jpg')
 const clock = new THREE.Clock();
 
 const listener = new THREE.AudioListener();
-// camera.add(listener);
+camera.add(listener);
 const sound = new THREE.Audio (listener)
 
 const audioLoader = new THREE.AudioLoader();
