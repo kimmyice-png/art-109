@@ -4,7 +4,7 @@ import { OrbitControls } from '../loaders/OrbitControls.js';
 
 let sceneContainer = document.querySelector("#scene-container");
 
-let human, mixer;
+let human, mixer, cloud;
 
 const scene = new THREE.Scene();
 
@@ -45,6 +45,12 @@ loader.load('./threeD-objects/river.glb', function (gltf) {
     });
 
 
+loader.load('./threeD-objects/clouds.glb', function(gltf){
+  cloud = gltf.scene;
+  scene.add(cloud);
+  cloud.rotation.y = 70
+
+})
 
 
     undefined, function(error){
@@ -59,10 +65,10 @@ scene.background = ploader.load('./threeD-objects/mountains.jpg')
 
 
 
-document.querySelector("body").addEventListener("mousedown", () => {
+// document.querySelector("body").addEventListener("mousedown", () => {
 
-  console.log("mousedown")
-})
+//   console.log("mousedown")
+// })
 
 
 camera.position.set(-30.5, 5.5, -20.5);
@@ -77,7 +83,6 @@ function animate() {
   if (human) {
     mixer.update(delta);
   }
-
   controls.update();
   renderer.render(scene, camera);
 }
